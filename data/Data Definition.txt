@@ -1,0 +1,40 @@
+Files Present:
+1. Trip Data
+2. Transaction Data(GPS Data)
+
+Corporate – LINDE
+Date Range: 01-10-2013 to 15-10-2013
+Format - All data files are in .txt format
+
+HEADER:
+1. Header for Trip Data -
+VEHICLE_ID','PRODUCT_ID','SUPP_PRODUCT_ID','DEP','ATA','CONSIGNOR_NAME','TRANSPORTER_NAME','CONSIGNEE_NAME','ORIGIN_LOC_NAME','DESTINATION_LOC_NAME
+	
+	vEHICLE_ID - Vehicle No.
+	PRODUCT_ID - GPS Unit ID (not present for LINDE)
+	SUPP_PRODUCT_ID - GPS Card No. (not present for LINDE)
+	DEP - Departure date and time of the vehicle from origin
+	ATA - Actual Time of Arrival (date and time)
+	CONSIGNOR_NAME - Name of the consignor
+	TRANSPORTER_NAME - Name of the transporter (not present for LINDE)
+	CONSIGNEE_NAME - Name of the consignee
+	ORIGIN_LOC_NAME - Name of the origin
+	DESTINATION_LOC_NAME - Name of the destination
+
+
+
+2. Header for Transaction Data -
+ENTITY_NAME'#'VEHICLE_ID'#'PRODUCT_ID'#'LATITUDE'#'LONGITUDE'#'DT_TRACK_STAMP’#'WPNT1'#'WPNT1_KM'#'WPNT2'#'WPNT2_KM'#'DIST'#'ACTUAL_DIST’	
+	
+	ENTITY_NAME - Name of the entity
+	VEHICLE_ID - Vehicle No.
+	PRODUCT_ID - GPS Unit ID
+	LATITUDE - Latitude of the location
+	LONGITUDE - Longitude of the location
+	DT_TRACK_STAMP - Current date & time
+	WPNT1 - Nearest Location 1
+	WPNT1_KM - Distance from Nearest Location 1 in KM
+	WPNT2 - Nearest Location 2
+	WPNT2_KM - Distance from Nearest Location 2 in KM
+	DIST - Distance covered by the vehicle (in KM)
+	ACTUAL_DIST - Actual cumulative distance as provided by the device (in Meter)
